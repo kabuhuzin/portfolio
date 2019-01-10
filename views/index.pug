@@ -1,0 +1,61 @@
+extends layout
+
+block content
+  div.header
+    ul
+      li.li1
+        a(href="#h").rg Home
+      li.li2
+        a(href="#pro").rg1 Profile
+      li.li3
+        a(href="#work").rg2 Work
+    div.cat
+      hr(width="234px").sihr
+      h3.contact Contact
+      img(src="./images/mail.svg", alt="mail").mail
+      h3.adres &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kabuhuzin<br>&nbsp;&nbsp;&nbsp;&nbsp;@gmail.com
+  div.bt
+    h1.scr
+    input(type="button", value="スクロールの位置").b
+  div.all
+    h1.name Tomomasa Yano
+    h1.portfolio Portfolio
+    img(src="./images/blue.jpg", alt="blue-sky").blue
+    div.tag1
+      h1#pro Profile
+      h1.ori 自己紹介
+      h1.ori2 2018年の9月頃からプログラミングの勉強を始め、
+      h1.ori3 javascript・node.jsを勉強しつつ、webサービスを開発中
+      img(src="./images/sekiran.jpg", alt="sekiranunn").sekiran
+    div.tag2
+      h1.sof よく使用する言語　ソフトウェア
+    div.imgtag
+      img(src="./images/html2.png", alt="html5").html
+      img(src="./images/CSS3.png", alt="css3").css
+      img(src="./images/js.png", alt="js").js
+      img(src="./images/nodejs.png", alt="nodejs").node
+      img(src="./images/github.png", alt="github").github
+      img(src="./images/heroku2.png", alt="heroku").heroku
+    div.yama
+      img(src="./images/yama.jpg", alt="yama").imyama
+    h1#work.work2 Work
+    div.tag3
+      h1.ct 作成したもの
+      img(src="./images/カレンダー.jpg", alt="calendar").calendar
+      div.ghl
+        h2 カレンダー表<br>
+        a(href="https://kabuhuzin.github.io/calendar/calendar.html") https://kabuhuzin.github.io/calendar/calendar.html
+        h2 Github<br>
+          a(href="https://github.com/kabuhuzin/calendar") https://github.com/kabuhuzin/calendar
+        h2 雲を描くようにイメージしたカレンダー表です
+      img(src="./images/投稿掲示板.jpg", alt="secret-bord").sboard
+      div.ghl2
+        h2 秘密の投稿掲示板<br>
+          a(href="https://shrouded-meadow-12439.herokuapp.com/posts") https://shrouded-meadow-12439.herokuapp.com/posts
+        h2 Github<br>
+          a(href="https://github.com/kabuhuzin/secret-board") https://github.com/kabuhuzin/secret-board
+      img(src="./images/予定調整くん.jpg", alt="schedule").schedule
+      div.ghl3
+        h2 予定調整くん<br>
+          a(href="https://quiet-stream-49650.herokuapp.com/") https://quiet-stream-49650.herokuapp.com/
+    script(src="/javascripts/bundle.js")
