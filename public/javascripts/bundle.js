@@ -86,51 +86,35 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
 
-var $ = __webpack_require__(1);
 
-$(function () {
-  var proposi = $('#pro').offset().top;
-  var workposi = $('#work').offset().top;
-  $('.rg').click(function () {
-    $('html,body').animate({
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(function () {
+  var proposi = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#pro').offset().top;
+  var workposi = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#work').offset().top;
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.rg').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('html,body').animate({
       scrollTop: 0
     }, 500, 'swing');
     return false;
   });
-  $('.rg1').click(function () {
-    $('html,body').animate({
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.rg1').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('html,body').animate({
       scrollTop: proposi
     }, 500, 'swing');
     return false;
   });
-  $('.rg2').click(function () {
-    $('html,body').animate({
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.rg2').click(function () {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('html,body').animate({
       scrollTop: workposi
     }, 500, 'swing');
     return false;
-  });
-  var scr = $('.scr');
-  var b = $('.b');
-  var all = $('.all');
-  b.click(function () {
-    scr.text('scrollTop:' + $(window).scrollTop());
-  });
-  var tag1 = $('.tag1');
-  $(window).scroll(function () {
-    tag1.each(function () {
-      var scroll = $(window).scrollTop();
-
-      if (scroll > 400) {
-        tag1.css('opacity', '1');
-      } else {
-        tag1.css('opacity', '0');
-      }
-    });
   });
 });
 

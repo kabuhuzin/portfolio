@@ -1,5 +1,5 @@
 'use strict';
-const $ = require('jquery');
+import $ from 'jquery';
 
 $(function () {
   var proposi =  $('#pro').offset().top;
@@ -18,21 +18,4 @@ $(function () {
     return false;
   });
 
-  var scr = $('.scr');
-  var b = $('.b');
-  var all = $('.all')
-  b.click(function () {
-    scr.text('scrollTop:' + $(window).scrollTop());
-  });
-  var tag1 = $('.tag1')
-$(window).scroll(function () {
-  tag1.each(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll > 400) {
-      tag1.css('opacity','1');
-    }else{
-      tag1.css('opacity','0');
-    }
-  });
-});
 });
